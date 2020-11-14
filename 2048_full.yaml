@@ -52,7 +52,7 @@ metadata:
     alb.ingress.kubernetes.io/target-type: ip
 spec:
   rules:
-    - host: "2048.example.com"
+    - host: hello2.lispmm.com
       http:
         paths:
           - path: /*
