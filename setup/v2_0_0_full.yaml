@@ -475,7 +475,7 @@ spec:
     spec:
       containers:
         - args:
-            - --cluster-name=eks-try-2020-1
+            - --cluster-name=eks-try-2020-2
             - --ingress-class=alb
           image: amazon/aws-alb-ingress-controller:v2.0.0
           livenessProbe:
