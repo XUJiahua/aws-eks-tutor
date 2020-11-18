@@ -2,9 +2,11 @@ apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 
 metadata:
-  name: eks-try-2020-1
+  name: eks-try-2020-2
   region: ap-northeast-1
   version: "1.18"
+vpc:
+  cidr: "192.168.48.0/21"
 iam:
   withOIDC: true
 managedNodeGroups:
@@ -15,4 +17,4 @@ managedNodeGroups:
     maxSize: 2
     volumeSize: 200
     ssh:
-      publicKeyName: 'my-key-pair'
+      publicKeyName: "my-key-pair"
